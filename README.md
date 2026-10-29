@@ -26,3 +26,21 @@
 ### 1. Сборка Docker-образа
 ```bash
 docker build -t habit-api .
+```
+### 2. Запуск контейнера с пробросом порта
+```
+docker run -d -p 8080:8080 --name my-habit-container habit-api
+```
+### 3. Проверка работы API
+```
+[http://localhost:8080/habits](http://localhost:8080/habits)
+```
+### 4. Проверка контейнера и логов
+```
+docker ps
+docker logs my-habit-container
+```
+### Скриншоты работы
+![Docker ps](docker-ps.webp)
+![Docker build](docker-build.webp)
+![API Response](api-response.webp)
