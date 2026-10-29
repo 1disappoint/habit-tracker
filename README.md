@@ -18,3 +18,11 @@
 
 ## GitHub Network
 Ссылка на граф веток: https://github.com/1disappoint/habit-tracker/network
+
+---
+
+## Запуск API в Docker
+
+### 1. Сборка Docker-образа
+```bash
+docker build -t habit-api .
